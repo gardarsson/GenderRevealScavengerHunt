@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class OnHoverController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnMouseOver()
     {
-        
+        Debug.Log("Mouse is over");
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnMouseExit()
     {
-        
+        Debug.Log("Mouse is no longer on object");
     }
 }
