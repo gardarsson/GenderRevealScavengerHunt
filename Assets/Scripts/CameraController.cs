@@ -15,9 +15,9 @@ public class CameraController : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKey(KeyCode.A))
-            cameraTransform.position += new Vector3(-speed * Time.deltaTime, 0f, 0f);
-        if (Input.GetKey(KeyCode.D))
-            cameraTransform.position += new Vector3(speed * Time.deltaTime, 0f, 0f);
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            cameraTransform.localPosition += new Vector3(-speed * Time.deltaTime, 0f, 0f);
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            cameraTransform.localPosition += new Vector3(speed * Time.deltaTime, 0f, 0f);
     }
 }
