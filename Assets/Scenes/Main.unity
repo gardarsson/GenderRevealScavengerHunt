@@ -441,7 +441,7 @@ Transform:
   m_Children:
   - {fileID: 579856840}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 30, y: -90, z: 0}
 --- !u!1001 &133484039
 PrefabInstance:
@@ -1442,7 +1442,7 @@ Transform:
   m_Children:
   - {fileID: 1598564125}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!114 &455925920
 MonoBehaviour:
@@ -1701,6 +1701,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a326f3eeff46ae40bf84fca987b49ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &599627774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599627772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66fa32d786741c94cb41b14b4d5ec4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  question: "Hva\xF0a \xE1r kynntumst vi\xF0?"
+  answers:
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  correctAnswer: 1
 --- !u!4 &599627776 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 51df288df6d8c864aae27c801a5fd8a5, type: 3}
@@ -2304,7 +2323,7 @@ Transform:
   m_LocalScale: {x: 3, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!1001 &722275750
 PrefabInstance:
@@ -2546,7 +2565,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &859541108
 PrefabInstance:
@@ -3075,7 +3094,7 @@ Transform:
   - {fileID: 76689453}
   - {fileID: 1384690538}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1043120977
 GameObject:
@@ -3300,7 +3319,7 @@ Transform:
   - {fileID: 685951178}
   - {fileID: 280639211}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1276062675
 GameObject:
@@ -3778,7 +3797,7 @@ Transform:
   - {fileID: 1598149546}
   - {fileID: 1782554250940342060}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1548230566
 GameObject:
@@ -4436,6 +4455,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3c90f44053ecbe9468be29ea5c004fcf, type: 3}
   m_PrefabInstance: {fileID: 859541108}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1974077492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974077493}
+  - component: {fileID: 1974077494}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1974077493
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974077492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1974077494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974077492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 966a4c59f325b2548aaec6602c3e1e9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  question: {fileID: 0}
+  answer1: {fileID: 0}
+  answer2: {fileID: 0}
+  answer3: {fileID: 0}
+  answer4: {fileID: 0}
 --- !u!1 &1989444797
 GameObject:
   m_ObjectHideFlags: 0
@@ -4554,7 +4621,7 @@ Transform:
   - {fileID: 1420390704}
   - {fileID: 1813708333}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2008951357 stripped
 Transform:
