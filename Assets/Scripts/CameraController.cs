@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public float speed;
+    public Transform minTransform, maxTransform;
 
     private Transform cameraTransform;
     private Material fadeMaterial;
@@ -27,9 +28,17 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-            cameraTransform.localPosition += cameraTransform.right * (-speed * Time.deltaTime);
+        {
+            if (cameraTransform.localPosition.x <= minTransform.localPosition.x)
+                return;
+            cameraTransform.position += cameraTransform.right * (-speed * Time.deltaTime);
+        }
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-            cameraTransform.localPosition += cameraTransform.right * (speed * Time.deltaTime);
+        {
+            if (cameraTransform.localPosition.x >= maxTransform.localPosition.x)
+                return;
+            cameraTransform.position += cameraTransform.right * (speed * Time.deltaTime);
+        }
     }
 
     private IEnumerator FadeMaterial(Material mat)
