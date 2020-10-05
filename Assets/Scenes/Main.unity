@@ -3619,6 +3619,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: IsCorrectAnswer
       objectReference: {fileID: 0}
+    - target: {fileID: 8963470771209920529, guid: 909035d9e274de7479f259d9752c7467, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8963470771453483027, guid: 909035d9e274de7479f259d9752c7467, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3627,6 +3631,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: IsCorrectAnswer
       objectReference: {fileID: 0}
+    - target: {fileID: 8963470771453483027, guid: 909035d9e274de7479f259d9752c7467, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8963470771453483027, guid: 909035d9e274de7479f259d9752c7467, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8963470771453483027, guid: 909035d9e274de7479f259d9752c7467, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8963470771492046583, guid: 909035d9e274de7479f259d9752c7467, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3634,10 +3650,22 @@ PrefabInstance:
     - target: {fileID: 8963470771492046583, guid: 909035d9e274de7479f259d9752c7467, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: IsCorrectAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8963470771492046583, guid: 909035d9e274de7479f259d9752c7467, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8963470772029396249, guid: 909035d9e274de7479f259d9752c7467, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8963470772029396250, guid: 909035d9e274de7479f259d9752c7467, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8963470772029396250, guid: 909035d9e274de7479f259d9752c7467, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8963470772374198929, guid: 909035d9e274de7479f259d9752c7467, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3746,6 +3774,10 @@ PrefabInstance:
     - target: {fileID: 8963470772707084093, guid: 909035d9e274de7479f259d9752c7467, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: IsCorrectAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8963470772707084093, guid: 909035d9e274de7479f259d9752c7467, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 909035d9e274de7479f259d9752c7467, type: 3}
@@ -3872,11 +3904,103 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 43198248cde20a842bced61741fb3346, type: 3}
   m_PrefabInstance: {fileID: 2135937691}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &280239972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 96e2de0a6cd02a64cb502c2640155ce6, type: 3}
+  m_PrefabInstance: {fileID: 1135608045}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &280239973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280239972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66fa32d786741c94cb41b14b4d5ec4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBeenAnswered: 0
+  question: "Hvernig hef \xE9g veri\xF0 a\xF0 valda m\xF6mmu mestum \xF3\xFE\xE6gindum?"
+  answers:
+  - "\xDEreyta"
+  - "\xD3gle\xF0i"
+  - "L\xEDtil sem engin matarl\xF6ngun"
+  - "Bakfl\xE6\xF0i/brj\xF3stsvi\xF0i"
+  letter: 79
+  correctAnswer: 0
+--- !u!65 &280239974
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280239972}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18, y: 0.18000005, z: 0.22000006}
+  m_Center: {x: -0.00000047683716, y: -0.000000074505806, z: 0.00000014901161}
 --- !u!4 &280239975 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 96e2de0a6cd02a64cb502c2640155ce6, type: 3}
   m_PrefabInstance: {fileID: 1135608045}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &280239976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280239972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a326f3eeff46ae40bf84fca987b49ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowMaterial: {fileID: 2100000, guid: 5125f71b500e3c94980d3b49e671b28c, type: 2}
+  questionCanvas: {fileID: 1165673041}
+--- !u!114 &280239977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280239972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b529247722c3cbb4bb1a003041a053ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1974077494}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetQuestion
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 280239973}
+          m_ObjectArgumentAssemblyTypeName: Question, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1165673041}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &280639210
 GameObject:
   m_ObjectHideFlags: 0
@@ -4684,11 +4808,103 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358409827}
   m_Mesh: {fileID: -654269794105591134, guid: c48dd30a07c89b84fbb2109b2f91d26d, type: 3}
+--- !u!1 &365013629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9171266593403266138, guid: 27fc26fdf4949824e873988e3e7e449e, type: 3}
+  m_PrefabInstance: {fileID: 1570555722}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &365013630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8362395937175584480, guid: 27fc26fdf4949824e873988e3e7e449e, type: 3}
   m_PrefabInstance: {fileID: 1570555722}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &365013631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365013629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66fa32d786741c94cb41b14b4d5ec4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBeenAnswered: 0
+  question: "Hva\xF0a heims\xE1lfur hafa mamma og pabbi heims\xF3tt saman?"
+  answers:
+  - "Evr\xF3pu, As\xEDu, N-Amer\xEDku"
+  - "N-Amer\xEDka, Evr\xF3pa, Afr\xEDka"
+  - "Evr\xF3pa, As\xEDa, Afr\xEDka"
+  - "As\xEDa, N-Amer\xEDka, Eyja\xE1lfa"
+  letter: 71
+  correctAnswer: 1
+--- !u!114 &365013632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365013629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a326f3eeff46ae40bf84fca987b49ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowMaterial: {fileID: 2100000, guid: 5125f71b500e3c94980d3b49e671b28c, type: 2}
+  questionCanvas: {fileID: 1165673041}
+--- !u!65 &365013633
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365013629}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 941.0253, y: 808.59674, z: 330.4192}
+  m_Center: {x: -63.340122, y: 34.56157, z: 164.70961}
+--- !u!114 &365013634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365013629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b529247722c3cbb4bb1a003041a053ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1974077494}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetQuestion
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 365013631}
+          m_ObjectArgumentAssemblyTypeName: Question, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1165673041}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &366524286
 GameObject:
   m_ObjectHideFlags: 0
@@ -4912,6 +5128,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 388271250}
   m_Mesh: {fileID: 6739591300041624225, guid: 2c89fa0830ace194288af544025e79c8, type: 3}
+--- !u!114 &392500465 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8963470772821140473, guid: 909035d9e274de7479f259d9752c7467, type: 3}
+  m_PrefabInstance: {fileID: 232012930}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &407693853
 GameObject:
   m_ObjectHideFlags: 0
@@ -5842,6 +6069,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &503118049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503118042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a326f3eeff46ae40bf84fca987b49ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowMaterial: {fileID: 2100000, guid: 5125f71b500e3c94980d3b49e671b28c, type: 2}
+  questionCanvas: {fileID: 1165673041}
 --- !u!4 &510894723 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400016, guid: 76f69c2044293fc40a066ff85ecb70df, type: 3}
@@ -6402,62 +6643,11 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!1 &599627772 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 51df288df6d8c864aae27c801a5fd8a5, type: 3}
-  m_PrefabInstance: {fileID: 637295752}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &599627773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 599627772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a326f3eeff46ae40bf84fca987b49ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &599627774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 599627772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66fa32d786741c94cb41b14b4d5ec4ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasBeenAnswered: 0
-  question: "Hva\xF0a \xE1r kynntumst vi\xF0?"
-  answers:
-  - 2012
-  - 2013
-  - 2014
-  - 2015
-  letter: 
-  correctAnswer: 1
 --- !u!4 &599627776 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 51df288df6d8c864aae27c801a5fd8a5, type: 3}
   m_PrefabInstance: {fileID: 637295752}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &599627777
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 599627772}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 15.357105, y: 45.45063, z: 58.668114}
-  m_Center: {x: -0.00000023841858, y: -0.0000047683716, z: 29.210201}
 --- !u!1 &606541455
 GameObject:
   m_ObjectHideFlags: 0
@@ -13243,11 +13433,103 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c90f44053ecbe9468be29ea5c004fcf, type: 3}
+--- !u!1 &861888209 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4863812997286658195, guid: a4c285c82d33647499c18238bfa70662, type: 3}
+  m_PrefabInstance: {fileID: 124136798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &861888210 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3099111196712332539, guid: a4c285c82d33647499c18238bfa70662, type: 3}
   m_PrefabInstance: {fileID: 124136798}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &861888211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861888209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66fa32d786741c94cb41b14b4d5ec4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBeenAnswered: 0
+  question: "Hva\xF0 var \xE9g st\xF3r \xED 20 vikna s\xF3nar?"
+  answers:
+  - 15
+  - 20
+  - 25
+  - 30
+  letter: 71
+  correctAnswer: 2
+--- !u!65 &861888212
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861888209}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0219109, y: 0.9999999, z: 0.090695284}
+  m_Center: {x: 0.06573295, y: 0.043803826, z: 0.016433211}
+--- !u!114 &861888213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861888209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a326f3eeff46ae40bf84fca987b49ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowMaterial: {fileID: 2100000, guid: 5125f71b500e3c94980d3b49e671b28c, type: 2}
+  questionCanvas: {fileID: 1165673041}
+--- !u!114 &861888214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861888209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b529247722c3cbb4bb1a003041a053ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1974077494}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetQuestion
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 861888211}
+          m_ObjectArgumentAssemblyTypeName: Question, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1165673041}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1001 &870148102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13373,6 +13655,98 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4c285c82d33647499c18238bfa70662, type: 3}
+--- !u!1 &880689264 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4432079423594988012, guid: bc55accb0835eb64bad0145724864eb7, type: 3}
+  m_PrefabInstance: {fileID: 633045772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &880689266
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880689264}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.097124, y: 1.8970878, z: 5.7893243}
+  m_Center: {x: -1.900872, y: 0.9290279, z: 3.4118645}
+--- !u!114 &880689267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880689264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a326f3eeff46ae40bf84fca987b49ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowMaterial: {fileID: 2100000, guid: 5125f71b500e3c94980d3b49e671b28c, type: 2}
+  questionCanvas: {fileID: 1165673041}
+--- !u!114 &880689268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880689264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66fa32d786741c94cb41b14b4d5ec4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBeenAnswered: 0
+  question: "Hva\xF0a \xE1r kynntust mamma og pabbi?"
+  answers:
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  letter: 73
+  correctAnswer: 1
+--- !u!114 &880689269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880689264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b529247722c3cbb4bb1a003041a053ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1974077494}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetQuestion
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 880689268}
+          m_ObjectArgumentAssemblyTypeName: Question, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1165673041}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!4 &885748224 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3099111196712332539, guid: a4c285c82d33647499c18238bfa70662, type: 3}
@@ -13730,6 +14104,10 @@ GameObject:
   - component: {fileID: 922898984}
   - component: {fileID: 922898986}
   - component: {fileID: 922898985}
+  - component: {fileID: 922898989}
+  - component: {fileID: 922898988}
+  - component: {fileID: 922898987}
+  - component: {fileID: 922898990}
   m_Layer: 0
   m_Name: vase_4 (1)
   m_TagString: Untagged
@@ -13800,6 +14178,93 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922898983}
   m_Mesh: {fileID: 4300012, guid: 2053965ddb261d94391546f869ad45c6, type: 3}
+--- !u!65 &922898987
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922898983}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.735574, y: 10.92296, z: 9.735571}
+  m_Center: {x: -0.000015258789, y: 0.0000014305115, z: -0.00000047683716}
+--- !u!114 &922898988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922898983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a326f3eeff46ae40bf84fca987b49ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowMaterial: {fileID: 2100000, guid: 5125f71b500e3c94980d3b49e671b28c, type: 2}
+  questionCanvas: {fileID: 1165673041}
+--- !u!114 &922898989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922898983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66fa32d786741c94cb41b14b4d5ec4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBeenAnswered: 0
+  question: "Hva\xF0 f\xF3r mamma oft a\xF0 heims\xE6kja pabba til London?"
+  answers:
+  - 6
+  - 7
+  - 8
+  - 9
+  letter: 69
+  correctAnswer: 3
+--- !u!114 &922898990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922898983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b529247722c3cbb4bb1a003041a053ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1974077494}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetQuestion
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 922898989}
+          m_ObjectArgumentAssemblyTypeName: Question, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1165673041}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &932717439
 GameObject:
   m_ObjectHideFlags: 0
@@ -16157,6 +16622,11 @@ Transform:
   m_Father: {fileID: 2071577110}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1165673041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8963470772029396249, guid: 909035d9e274de7479f259d9752c7467, type: 3}
+  m_PrefabInstance: {fileID: 232012930}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1172231482
 GameObject:
   m_ObjectHideFlags: 0
@@ -16315,6 +16785,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177536218}
   m_CullTransparentMesh: 0
+--- !u!114 &1201294748 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8963470772037623047, guid: 909035d9e274de7479f259d9752c7467, type: 3}
+  m_PrefabInstance: {fileID: 232012930}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1215999458
 GameObject:
   m_ObjectHideFlags: 0
@@ -16611,6 +17092,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1273471093}
+  - component: {fileID: 1273471096}
+  - component: {fileID: 1273471095}
+  - component: {fileID: 1273471094}
+  - component: {fileID: 1273471097}
   m_Layer: 0
   m_Name: instance_0 (1)
   m_TagString: Untagged
@@ -16633,6 +17118,93 @@ Transform:
   m_Father: {fileID: 147801498858246257}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1273471094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273471092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a326f3eeff46ae40bf84fca987b49ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowMaterial: {fileID: 2100000, guid: 5125f71b500e3c94980d3b49e671b28c, type: 2}
+  questionCanvas: {fileID: 1165673041}
+--- !u!65 &1273471095
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273471092}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.706445, y: 14.301173, z: 13.241364}
+  m_Center: {x: -6.288369, y: 6.650588, z: 6.1206794}
+--- !u!114 &1273471096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273471092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66fa32d786741c94cb41b14b4d5ec4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBeenAnswered: 0
+  question: "Hva\xF0a mat hefur mig langa\xF0 mest \xED \xED maganum \xE1 m\xF6mmu?"
+  answers:
+  - "S\xFAkkula\xF0i"
+  - Pizzu
+  - "\xCDs"
+  - "\xC1vexti"
+  letter: 82
+  correctAnswer: 3
+--- !u!114 &1273471097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273471092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b529247722c3cbb4bb1a003041a053ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1974077494}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetQuestion
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1273471096}
+          m_ObjectArgumentAssemblyTypeName: Question, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1165673041}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1276062675
 GameObject:
   m_ObjectHideFlags: 0
@@ -19284,7 +19856,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1467945239}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -22312,6 +22884,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715798071}
   m_Mesh: {fileID: 3466654341170182796, guid: bc55accb0835eb64bad0145724864eb7, type: 3}
+--- !u!114 &1719353385 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8963470771125512381, guid: 909035d9e274de7479f259d9752c7467, type: 3}
+  m_PrefabInstance: {fileID: 232012930}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1722195497 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: d534d0198c237a043a8e671f0bf2859e, type: 3}
@@ -22589,6 +23172,17 @@ Transform:
   m_Father: {fileID: 2071577110}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1779941139 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8963470772758264458, guid: 909035d9e274de7479f259d9752c7467, type: 3}
+  m_PrefabInstance: {fileID: 232012930}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1782075126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23096,6 +23690,98 @@ Transform:
   m_Father: {fileID: 1995767172}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1835167821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7724991136427841675, guid: ed31822990be1c24db6ccfae14074d01, type: 3}
+  m_PrefabInstance: {fileID: 806478764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1835167823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835167821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a326f3eeff46ae40bf84fca987b49ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowMaterial: {fileID: 2100000, guid: 5125f71b500e3c94980d3b49e671b28c, type: 2}
+  questionCanvas: {fileID: 1165673041}
+--- !u!114 &1835167824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835167821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66fa32d786741c94cb41b14b4d5ec4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBeenAnswered: 0
+  question: "Hvert f\xF3ru mamma og pabbi fyrst saman til \xFAtlanda?"
+  answers:
+  - Bretlands
+  - Frakklands
+  - Egyptalands
+  - "Bandar\xEDkjana"
+  letter: 78
+  correctAnswer: 0
+--- !u!65 &1835167825
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835167821}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.805951, y: 11.092461, z: 14.593634}
+  m_Center: {x: -4.4029765, y: 5.046232, z: 6.796824}
+--- !u!114 &1835167826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835167821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b529247722c3cbb4bb1a003041a053ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1974077494}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetQuestion
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1835167824}
+          m_ObjectArgumentAssemblyTypeName: Question, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1165673041}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1838692649
 GameObject:
   m_ObjectHideFlags: 0
@@ -23325,6 +24011,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867906674}
   m_CullTransparentMesh: 0
+--- !u!114 &1875250654 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8963470772158823165, guid: 909035d9e274de7479f259d9752c7467, type: 3}
+  m_PrefabInstance: {fileID: 232012930}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1883055532
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24548,12 +25245,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 966a4c59f325b2548aaec6602c3e1e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 0}
-  answer1: {fileID: 0}
-  answer2: {fileID: 0}
-  answer3: {fileID: 0}
-  answer4: {fileID: 0}
-  letter: {fileID: 0}
+  question: {fileID: 1201294748}
+  answer1: {fileID: 1875250654}
+  answer2: {fileID: 1779941139}
+  answer3: {fileID: 2021610970}
+  answer4: {fileID: 1719353385}
+  letter: {fileID: 392500465}
+  lettersToShow: {fileID: 1905945556}
+  continueButton: {fileID: 1467945239}
 --- !u!4 &1977145625 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4106303222301906, guid: 4941dfa9146ec4247801bfca23379626, type: 3}
@@ -24767,6 +25466,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4410843128935598, guid: c3eb64e478b2bb748ae1501daf818368, type: 3}
   m_PrefabInstance: {fileID: 1909106889}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2021610970 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8963470772076001705, guid: 909035d9e274de7479f259d9752c7467, type: 3}
+  m_PrefabInstance: {fileID: 232012930}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2027066060
 GameObject:
   m_ObjectHideFlags: 0
@@ -24798,11 +25508,103 @@ Transform:
   m_Father: {fileID: 2071577110}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2028108821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1511746606845076, guid: da4ad2310c6a3a44e8c6b74c731ffbc7, type: 3}
+  m_PrefabInstance: {fileID: 982861515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2028108822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028108821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66fa32d786741c94cb41b14b4d5ec4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBeenAnswered: 0
+  question: "Hva\xF0 kalla mamma og pabbi mig?"
+  answers:
+  - Bjalla
+  - "Sn\xFA\xF0ur"
+  - "Litla lj\xF3s"
+  - "Ku\xF0ungur"
+  letter: 66
+  correctAnswer: 2
+--- !u!114 &2028108823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028108821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a326f3eeff46ae40bf84fca987b49ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowMaterial: {fileID: 2100000, guid: 5125f71b500e3c94980d3b49e671b28c, type: 2}
+  questionCanvas: {fileID: 1165673041}
 --- !u!4 &2028108824 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4494775606006702, guid: da4ad2310c6a3a44e8c6b74c731ffbc7, type: 3}
   m_PrefabInstance: {fileID: 982861515}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2028108825
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028108821}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5246053, y: 2.1629426, z: 1.2757359}
+  m_Center: {x: -0.000008498307, y: 0.37244225, z: 0.15584649}
+--- !u!114 &2028108826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028108821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b529247722c3cbb4bb1a003041a053ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1974077494}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetQuestion
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2028108822}
+          m_ObjectArgumentAssemblyTypeName: Question, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1165673041}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &2046781761
 GameObject:
   m_ObjectHideFlags: 0

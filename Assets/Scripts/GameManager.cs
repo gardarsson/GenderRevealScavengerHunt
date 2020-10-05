@@ -26,7 +26,15 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI letter;
 
+    [SerializeField]
+    private GameObject lettersToShow;
+
+    [SerializeField]
+    private GameObject continueButton;
+
     private int correctAnswer;
+
+    private int questionsAnswered = 0;
 
     public void SetQuestion(Question thisQuestion)
     {
@@ -36,10 +44,11 @@ public class GameManager : MonoBehaviour
             answer2.transform.parent.gameObject.SetActive(false);
             answer3.transform.parent.gameObject.SetActive(false);
             answer4.transform.parent.gameObject.SetActive(false);
-            letter.text = thisQuestion.letter;
+            letter.text = "Rétt svar, stafurinn er: " + thisQuestion.letter;
         }
         else
         {
+            StartCoroutine(DisableTemporarily());
             currentQuestion = thisQuestion;
             question.text = thisQuestion.question;
             answer1.text = thisQuestion.answers[0];
@@ -65,7 +74,26 @@ public class GameManager : MonoBehaviour
             answer2.transform.parent.gameObject.SetActive(false);
             answer3.transform.parent.gameObject.SetActive(false);
             answer4.transform.parent.gameObject.SetActive(false);
-            letter.text = currentQuestion.letter;
+            letter.text = "Rétt svar, stafurinn er: " + currentQuestion.letter;
+            StartCoroutine(HideAfterDelay(answer1.transform.root.GetChild(0).gameObject, 2));
+
+            questionsAnswered++;
+
+            if (questionsAnswered == 8)
+            {
+                continueButton.GetComponent<Button>().enabled = true;
+                continueButton.GetComponent<Image>().color = Color.cyan;
+            }
+
+            foreach (Transform t in lettersToShow.GetComponentsInChildren<Transform>())
+            {
+                if (t.name == currentQuestion.letter.ToString() && !t.GetChild(0).gameObject.activeInHierarchy)
+                {
+                    t.GetChild(0).gameObject.SetActive(true);
+                    return;
+                }
+            }
+
         }
         else
         {
@@ -87,5 +115,24 @@ public class GameManager : MonoBehaviour
         answer2.transform.parent.gameObject.SetActive(true);
         answer3.transform.parent.gameObject.SetActive(true);
         answer4.transform.parent.gameObject.SetActive(true);
+    }
+
+    IEnumerator HideAfterDelay(GameObject objectToHide, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        objectToHide.SetActive(false);
+    }
+
+    IEnumerator DisableTemporarily()
+    {
+        answer1.transform.parent.gameObject.GetComponent<Button>().interactable = false;
+        answer2.transform.parent.gameObject.GetComponent<Button>().interactable = false;
+        answer3.transform.parent.gameObject.GetComponent<Button>().interactable = false;
+        answer4.transform.parent.gameObject.GetComponent<Button>().interactable = false;
+        yield return new WaitForSeconds(0.2f);
+        answer1.transform.parent.gameObject.GetComponent<Button>().interactable = true;
+        answer2.transform.parent.gameObject.GetComponent<Button>().interactable = true;
+        answer3.transform.parent.gameObject.GetComponent<Button>().interactable = true;
+        answer4.transform.parent.gameObject.GetComponent<Button>().interactable = true;
     }
 }

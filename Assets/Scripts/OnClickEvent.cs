@@ -5,7 +5,6 @@ using UnityEngine.Events;
 
 public class OnClickEvent : MonoBehaviour
 {
-
     public UnityEvent myEvent;
 
     void OnMouseDown()

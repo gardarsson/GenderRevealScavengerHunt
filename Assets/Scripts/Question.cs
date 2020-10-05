@@ -6,7 +6,7 @@ public class Question : MonoBehaviour
     public bool hasBeenAnswered = false;
     public string question;
     public string[] answers;
-    public string letter;
+    public char letter;
     public int correctAnswer;
   
 }
