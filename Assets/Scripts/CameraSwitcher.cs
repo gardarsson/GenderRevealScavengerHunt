@@ -18,4 +18,9 @@ public class CameraSwitcher : MonoBehaviour
         else
             textToToggle.text = "Do you want to enter the nursery?";
     }
+
+    public void ActivateCamera(GameObject camera)
+    {
+        camera.gameObject.SetActive(true);
+    }
 }
