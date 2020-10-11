@@ -4114,7 +4114,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "j\xE1"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ed3f99b9ab8d6bb43a5170446221288a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5afb316311743b54d9fee071b0f3f1db, type: 2}
   m_sharedMaterial: {fileID: 418104004092669963, guid: ed3f99b9ab8d6bb43a5170446221288a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4178,7 +4178,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 9.338941, z: 0, w: 10.005995}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &227863703
