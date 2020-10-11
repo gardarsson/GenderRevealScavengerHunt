@@ -8,6 +8,7 @@ public class VideoPlayerManager : MonoBehaviour
     public Camera livingRoomCamera, nurseryCamera;
     public AudioSource mainAudioSource;
     public AudioClip winSong;
+    public GameObject quitCanvas;
 
     private VideoPlayer videoPlayer;
 
@@ -37,6 +38,10 @@ public class VideoPlayerManager : MonoBehaviour
 
         mainAudioSource.clip = winSong;
         mainAudioSource.Play();
+
+        yield return new WaitForSeconds(5f);
+
+        quitCanvas.SetActive(true);
     }
 
 }

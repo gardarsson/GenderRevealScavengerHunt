@@ -38,6 +38,11 @@ public class GameManager : MonoBehaviour
 
     private int questionsAnswered = 0;
 
+    public void QuitApplication()
+    {
+        Application.Quit();
+    }
+
     public void SetQuestion(Question thisQuestion)
     {
         if(thisQuestion.hasBeenAnswered)
