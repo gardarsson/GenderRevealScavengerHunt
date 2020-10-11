@@ -7,12 +7,23 @@ using UnityEngine.UI;
 public class OnHoverController : MonoBehaviour
 {
     public Material glowMaterial;
-    public GameObject questionCanvas;
+    public GameObject questionCanvas, startCanvas, finalCanvas;
 
     private Dictionary<GameObject, Material[]> storedMaterials = new Dictionary<GameObject, Material[]>();
 
     void Start()
     {
+        RectTransform[] panels = FindObjectsOfType<RectTransform>(true);
+
+        foreach(RectTransform panel in panels)
+        {
+            if (panel.name == "ReorderableLetterCanvas")
+                finalCanvas = panel.gameObject;
+
+            if (panel.name == "StartUpMenu")
+                startCanvas = panel.gameObject;
+        }
+
         foreach(Transform t in GetComponentsInChildren<Transform>())
         {
             if(t.GetComponent<Renderer>() != null)
@@ -22,10 +33,12 @@ public class OnHoverController : MonoBehaviour
         }
     }
 
-    void OnMouseOver()
+    void OnMouseEnter()
     {
-        if (questionCanvas.activeInHierarchy)
+        if (questionCanvas.activeInHierarchy || startCanvas.activeInHierarchy || finalCanvas.activeInHierarchy)
             return;
+
+        SoundManager.instance.PlayHoverSound();
 
         foreach (Transform t in GetComponentsInChildren<Transform>())
         {

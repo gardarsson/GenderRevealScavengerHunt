@@ -69,6 +69,8 @@ public class GameManager : MonoBehaviour
         correctAnswer = currentQuestion.correctAnswer;
         if(index  == correctAnswer)
         {
+            SoundManager.instance.PlayCorrectSound();
+
             currentQuestion.hasBeenAnswered = true;
             answer1.transform.parent.gameObject.SetActive(false);
             answer2.transform.parent.gameObject.SetActive(false);
@@ -94,10 +96,12 @@ public class GameManager : MonoBehaviour
                 }
             }
 
+
         }
         else
         {
             StartCoroutine(ToggleWrongAnswer());
+            SoundManager.instance.PlayWrongSound();
         }
 
     }
