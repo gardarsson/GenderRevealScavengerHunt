@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager instance;
-    public AudioClip correctAnswer, wrongAnswer, hoverSound, buttonOver;
+    public AudioClip correctAnswer, wrongAnswer, hoverSound, buttonOver, drumroll, winSound;
 
     AudioSource audioSource;
 
@@ -33,5 +33,15 @@ public class SoundManager : MonoBehaviour
     public void PlayButtonOverSound()
     {
         audioSource.PlayOneShot(buttonOver, 0.5f);
+    }
+
+    public void PlayDrumroll()
+    {
+        audioSource.PlayOneShot(drumroll, 1f);
+    }
+
+    public void PlayWin()
+    {
+        audioSource.PlayOneShot(winSound, 1f);
     }
 }

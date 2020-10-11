@@ -17737,6 +17737,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1017446135}
   - component: {fileID: 1017446134}
+  - component: {fileID: 1017446136}
   m_Layer: 0
   m_Name: VideoPlayer
   m_TagString: Untagged
@@ -17791,6 +17792,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1017446136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017446133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a6e82f1df382f469ac8da4dc113d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  livingRoomCamera: {fileID: 455925918}
+  nurseryCamera: {fileID: 117101389}
+  mainAudioSource: {fileID: 1974077495}
+  winSong: {fileID: 8300000, guid: c1a14529c3495400b9d0c51c5b4f9f6a, type: 3}
 --- !u!1 &1018731878
 GameObject:
   m_ObjectHideFlags: 0
@@ -19517,9 +19534,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1017446134}
-        m_TargetAssemblyTypeName: UnityEngine.Video.VideoPlayer, UnityEngine
-        m_MethodName: Play
+      - m_Target: {fileID: 1017446136}
+        m_TargetAssemblyTypeName: VideoPlayerManager, Assembly-CSharp
+        m_MethodName: PlayAnimation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19545,6 +19562,42 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2108696819}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2046373685}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1974077495}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -29805,6 +29858,8 @@ MonoBehaviour:
   wrongAnswer: {fileID: 8300000, guid: 20e70f58010699c43a4bd55b48b7cd79, type: 3}
   hoverSound: {fileID: 8300000, guid: 295bdf7d365ff3744aeefdda30a259de, type: 3}
   buttonOver: {fileID: 8300000, guid: d121bc51fe853ed49b7ca51ec36dafb6, type: 3}
+  drumroll: {fileID: 8300000, guid: e8c979ffb0717e04cb902e3c1305cdf5, type: 3}
+  winSound: {fileID: 8300000, guid: ce9b0ca81f69fb3479a9a238760a521f, type: 3}
 --- !u!82 &2046373686
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30954,6 +31009,11 @@ Transform:
   m_Father: {fileID: 1586042037}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2108696819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8963470772374198941, guid: 909035d9e274de7479f259d9752c7467, type: 3}
+  m_PrefabInstance: {fileID: 232012930}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2112148073
 GameObject:
   m_ObjectHideFlags: 0

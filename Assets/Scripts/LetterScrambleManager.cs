@@ -39,5 +39,6 @@ public class LetterScrambleManager : MonoBehaviour
         Color imgColor = new Color(160f / 255f, 250f / 255f, 165f / 255f, 100f / 255f);
         button.GetComponent<Button>().interactable = true;
         lettersBackgroundImage.GetComponent<Image>().color = imgColor;
+        SoundManager.instance.PlayWin();
     }
 }
