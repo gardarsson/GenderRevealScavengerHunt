@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject continueButton;
 
+    public CameraController[] cameraControllers;
+
     private int correctAnswer;
 
     private int questionsAnswered = 0;
@@ -125,6 +127,11 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         objectToHide.SetActive(false);
+
+        foreach(CameraController cc in cameraControllers)
+        {
+            cc.ResumeCameraMovement();
+        }
     }
 
     IEnumerator DisableTemporarily()

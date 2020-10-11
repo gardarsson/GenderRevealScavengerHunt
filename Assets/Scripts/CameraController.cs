@@ -49,4 +49,14 @@ public class CameraController : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
     }
+
+    public void FreezeCameraMovement()
+    {
+        speed = 0f;
+    }
+
+    public void ResumeCameraMovement()
+    {
+        speed = 2f;
+    }
 }
