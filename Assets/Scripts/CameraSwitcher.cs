@@ -14,9 +14,9 @@ public class CameraSwitcher : MonoBehaviour
         nurseryCamera.gameObject.SetActive(!nurseryCamera.gameObject.active);
 
         if (!livingRoomCamera.activeInHierarchy)
-            textToToggle.text = "Do you want to enter the living room?";
+            textToToggle.text = "Viltu fara í stofuna?";
         else
-            textToToggle.text = "Do you want to enter the nursery?";
+            textToToggle.text = "Viltu fara í barnaherbergið?";
     }
 
     public void ActivateCamera(GameObject camera)

@@ -15458,12 +15458,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBeenAnswered: 0
-  question: "Hva\xF0 var \xE9g st\xF3r \xED 20 vikna s\xF3nar?"
+  question: "Hvernig p\xF3sa\xF0i \xE9g fyrir m\xF6mmu og pabba \xED 20 vikna s\xF3nar?"
   answers:
-  - 15
-  - 20
-  - 25
-  - 30
+  - "Hendur undir haus og hn\xE9 upp a\xF0 bringu"
+  - "Hendur ni\xF0ur me\xF0 s\xED\xF0um og t\xE1sur upp \xED loft"
+  - "Hendur undir haus og t\xE1sur upp\xED loft"
+  - "\xC9g var of feimin/n og sneri bara baki"
   letter: 71
   correctAnswer: 2
 --- !u!65 &861888212
@@ -18135,7 +18135,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017446133}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: bf1128318ff9e8a47a5e1d2807867c2a, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: c957e6aff9d9775448aa1d74a3f61368, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 455925918}
